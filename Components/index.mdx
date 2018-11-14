@@ -1,0 +1,104 @@
+---
+name: VenueCardsScreen.js
+menu: Components
+route: /
+---
+import { Playground, PropsTable } from 'docz'
+import VenueCardsScreen from './screens/VenueCardsScreen'
+import { View, StyleSheet } from 'react-native'
+import { colors } from '../constants'
+import ApolloClient from 'apollo-boost'
+import { ApolloProvider } from 'react-apollo'
+
+# VenueCardsScreen.js (Previously VenueCards.js)
+
+
+## Description
+Previously known as 'VenueCards.js', this component is a screen that displays venue cards,
+which includes an image, venue name, and venue neighborhood. Scrolling is vertical.
+It grabs data from a GraphQL database and use Apollo to connect the two entities. The query
+to grab over 60 venues worth of data includes venue id, venue name, venue description,
+venue hoursText, neighborhood names, photo handles (part of a compressed image's url),
+and category name.
+
+
+## Properties
+Contains props passed from react-navigation and apollo's GraphQL query:
+<PropsTable of={VenueCardsScreen} />
+
+
+## Requirements
+Follow these steps to set up the environment (using the terminal):
+- Install NVM (Node Version Manager) `curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.11/install.sh | bash`
+
+- Run `nvm install node` to install the latest version of node.
+
+- You must have the expo-cli to run this project. So run the command `npm install -g expo-cli`
+
+- Now, if you want to run an iphone emulator, an easy way to download it is to download XCode if you have a Mac.
+If you want to run on an android emulator, the process is a bit longer but you'll just have to download Android Studio
+and download an emulator from within there. If you choose to run and test on your mobile device, install the Expo app
+from your Google play store or Apple App store.
+
+
+## How to run
+Create a folder to clone this repo to and cd into it. Run these commands on your terminal:
+
+- `git clone "https://github.com/pcooney10/rn-starter-edgar"`
+
+- `cd rn-starter-edgar`
+
+- `expo start`
+
+- Now, depending on the emulator you want to to use, in the terminal press 1 of 3 options:
+
+1. `i` to run on an iphone emulator you've installed on your PC
+
+2. `a` if you have an android emulator installed on your PC
+
+3. `e` to send a link to your phone via email or text.
+
+
+## Basic Usage
+Connect with GraphQL via Apollo and querie data that will be passed into this
+component. Component is looking for venue.id, venue.name, venue.neighborhood.name, and
+a venue.photos[0].handle. The handle is then put at the end of a url string to
+display an image.
+
+This component passes its query down to the child component VenueDetailsScreen.js with
+the help of React Navigation. Due to this, child component will be expecting
+venue.address, venue.description, venue.hoursText, and venue.category.name so be
+sure to query that as well.
+
+
+## UI
+On a web browser, this will appear as a long list of venue cards. On a mobile
+application, this component will have as many cards that could fit in a phone screen,
+typically 4 at least, and the user will have to scroll down to view the rest of the list.
+<Playground>
+  {() => {
+    // Apollo client setup
+    const client = new ApolloClient({
+      uri: 'https://api.graph.cool/simple/v1/paperhorn-gull-359'
+    });
+
+    // StyleSheet
+    const styles = StyleSheet.create({
+      container: {
+        flex: 1,
+        justifyContent: 'center',
+        backgroundColor: colors.primary2,
+        marginLeft: 111,
+        marginRight: 276,
+      }
+    });
+
+    return (
+      <ApolloProvider client={client}>
+        <View style={styles.container}>
+          <VenueCardsScreen />
+        </View>
+      </ApolloProvider>
+    );
+  }}
+</Playground>

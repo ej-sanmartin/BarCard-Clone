@@ -1,0 +1,68 @@
+{
+  "config": {
+    "title": "BarCard Clone",
+    "description": "My awesome app using docz",
+    "themeConfig": {
+      "colors": {
+        "primary": "#F462A8"
+      }
+    },
+    "menu": [],
+    "ordering": "descending",
+    "repository": null,
+    "native": true,
+    "codeSandbox": true,
+    "plugins": [
+      {}
+    ]
+  },
+  "entries": {
+    "Components/index.mdx": {
+      "name": "VenueCardsScreen.js",
+      "menu": "Components",
+      "route": "/",
+      "id": "1cf704a17f2a9cbcce1319b3ddb2e647",
+      "filepath": "Components/index.mdx",
+      "link": null,
+      "slug": "components-index",
+      "order": 0,
+      "headings": [
+        {
+          "depth": 1,
+          "slug": "venuecardsscreenjs-previously-venuecardsjs",
+          "value": "VenueCardsScreen.js (Previously VenueCards.js)"
+        },
+        {
+          "depth": 2,
+          "slug": "description",
+          "value": "Description"
+        },
+        {
+          "depth": 2,
+          "slug": "properties",
+          "value": "Properties"
+        },
+        {
+          "depth": 2,
+          "slug": "requirements",
+          "value": "Requirements"
+        },
+        {
+          "depth": 2,
+          "slug": "how-to-run",
+          "value": "How to run"
+        },
+        {
+          "depth": 2,
+          "slug": "basic-usage",
+          "value": "Basic Usage"
+        },
+        {
+          "depth": 2,
+          "slug": "ui",
+          "value": "UI"
+        }
+      ]
+    }
+  }
+}

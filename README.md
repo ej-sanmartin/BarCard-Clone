@@ -1,4 +1,7 @@
-# BarCard Clone Project
+# BarCard Clone
+
+
+![BarCard Logo](https://github.com/ej-sanmartin/BarCard-Clone/blob/master/assets/images/barcard.png)
 
 
 ## Description
@@ -58,5 +61,9 @@ To run docz documentation, run this command:
 
 
 ## Photo Preview
+
+![BarCard Clone Home Screen](https://github.com/ej-sanmartin/BarCard-Clone/blob/master/img/BarCardHomeScreen.jpg)
+
+![BarCard Clone Feed Screen](https://github.com/ej-sanmartin/BarCard-Clone/blob/master/img/BarCardFeedScreen.jpg)
 
 ![BarCard Clone Details Screen](https://github.com/ej-sanmartin/BarCard-Clone/blob/master/img/BarCardDetailsScreen.jpg)

@@ -58,3 +58,5 @@ To run docz documentation, run this command:
 
 
 ## Photo Preview
+
+![BarCard Clone Details Screen](https://github.com/ej-sanmartin/BarCard-Clone/blob/master/img/BarCardDetailsScreen.jpg)

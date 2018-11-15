@@ -62,8 +62,8 @@ To run docz documentation, run this command:
 
 ## Photo Preview
 
-<img alt="BarCard Clone Home Screen" href="https://github.com/ej-sanmartin/BarCard-Clone/blob/master/img/BarCardHomeScreen.jpg" width=100) />
+![BarCard Clone Home Screen](https://github.com/ej-sanmartin/BarCard-Clone/blob/master/img/BarCardHomeScreen.jpg)
 
-![BarCard Clone Feed Screen](https://github.com/ej-sanmartin/BarCard-Clone/blob/master/img/BarCardFeedScreen.jpg | width=100)
+![BarCard Clone Feed Screen](https://github.com/ej-sanmartin/BarCard-Clone/blob/master/img/BarCardFeedScreen.jpg)
 
-![BarCard Clone Details Screen](https://github.com/ej-sanmartin/BarCard-Clone/blob/master/img/BarCardDetailsScreen.jpg | width=100)
+![BarCard Clone Details Screen](https://github.com/ej-sanmartin/BarCard-Clone/blob/master/img/BarCardDetailsScreen.jpg)

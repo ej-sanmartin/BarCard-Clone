@@ -54,7 +54,7 @@ To run docz documentation, run this command:
 - `yarn docz dev`
 
 
-#Bugs
+##Bugs
 1. Bottom Tab not working properly. Home button does not respond. TODO: Look into react-navigation documentation.
 
 2. Docz's PropTable does not display the props. TODO: Utilize Query component from 'react-apollo' instead og HoC.
